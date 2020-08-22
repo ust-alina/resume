@@ -203,7 +203,7 @@ td {
 
   
 /* Portrait tablets and small desktops */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .about, .skills, .experience {
         justify-content: center;
         margin: 10px 0;
@@ -230,8 +230,9 @@ td {
         width: 100%;
     }
 
-    .skills__box, .skills__example, .experience {
+    .skills__box, .skills__example{
         width: 50%;
+        align-items: flex-start;
     }
 
     .mobile {
@@ -249,7 +250,7 @@ td {
 }
 
 /* Landscape phones and portrait tablets */
-@media screen and  (max-width: 767px) {
+@media (max-width: 767px) {
     .header__box {
         width: 400px;
     }
