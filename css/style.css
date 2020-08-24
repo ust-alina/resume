@@ -11,17 +11,17 @@ html, body {
 }
 
 .resume {
-    max-width: 1200px;
-    margin: auto;
+    max-width: 100%;
     flex: 1 0 auto;
     min-height: 100%;
     display: flex;
 	flex-direction: column;
-
 }
 
 .resume__body {
-    margin: 0 10px;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: auto;
     flex: 1 0 auto;
 }
 
@@ -285,7 +285,7 @@ td {
 
     .about__text {
         width: 100%;
-        margin: 0 12px;
+        padding: 0 20px;
     }
 
     .skills__education, .skills__box, .skills__example {
@@ -308,4 +308,32 @@ td {
     .experience {
         margin: 20px 0;
     }
+}
+
+
+@media (max-width: 480px) {
+    .header__box {
+        width: 240px;
+        height: 100px;
+    }
+
+    .header__title {
+        width: 220px;
+        height: auto;
+    }
+
+    .header__title h1 {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .header__title h2 {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .title {
+        width:80%;
+    }
+
 }
